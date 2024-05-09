@@ -1,0 +1,15 @@
+Index: src/main/resources/application.properties
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>spring.application.name=clothlogix\r\n\r\n# DataSource configuration\r\nspring.datasource.url=jdbc:mysql://localhost:3306/cloth_logix?useSSL=false&serverTimezone=UTC\r\nspring.datasource.username=root\r\nspring.datasource.password=fabless\r\n\r\n# JPA and Hibernate configuration\r\nspring.jpa.hibernate.ddl-auto=update\r\nspring.jpa.show-sql=true\r\nspring.jpa.properties.hibernate.dialect=org.hibernate.dialect.MySQL8Dialect\r\n\r\n# Specify the driver class (if needed)\r\nspring.datasource.driver-class-name=com.mysql.cj.jdbc.Driver
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>ISO-8859-1
+===================================================================
+diff --git a/src/main/resources/application.properties b/src/main/resources/application.properties
+--- a/src/main/resources/application.properties	
++++ b/src/main/resources/application.properties	
+@@ -1,4 +1,3 @@
+-spring.application.name=clothlogix
+ 
+ # DataSource configuration
+ spring.datasource.url=jdbc:mysql://localhost:3306/cloth_logix?useSSL=false&serverTimezone=UTC
