@@ -13,13 +13,14 @@ public class TipoEntity {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column (name = "id")
-    private Integer id;
+    private Long id;
 
     @Column(name =  "descrizione")
     private String descrizione;
 
     public TipoEntity(){}
-    public TipoEntity(Integer id, String descrizione) {
+
+    public TipoEntity(Long id, String descrizione) {
         this.id = id;
         this.descrizione = descrizione;
     }

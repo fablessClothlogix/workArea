@@ -14,12 +14,14 @@ public class ColoreEntity {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column (name = "id")
-    private Integer id;
+    private Long id;
 
     @Column(name =  "descrizione")
     private String descrizione;
 
-    public ColoreEntity(Integer id, String descrizione) {
+    public ColoreEntity() {}
+
+    public ColoreEntity(Long id, String descrizione) {
         this.id = id;
         this.descrizione = descrizione;
     }

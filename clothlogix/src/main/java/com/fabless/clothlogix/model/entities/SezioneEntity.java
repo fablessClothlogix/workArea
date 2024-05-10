@@ -13,7 +13,7 @@ public class SezioneEntity {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column (name = "id")
-    private Integer id;
+    private Long id;
 
     @Column(name =  "scaffale")
     private String scaffale;
@@ -21,8 +21,13 @@ public class SezioneEntity {
     @Column(name =  "fila")
     private String fila;
 
+    @ManyToOne
+    @JoinColumn(name = "magazzino_id")
+    private MagazzinoEntity magazzino;
+
     public SezioneEntity(){}
-    public SezioneEntity(Integer id, String scaffale, String fila) {
+
+    public SezioneEntity(Long id, String scaffale, String fila) {
         this.id = id;
         this.scaffale = scaffale;
         this.fila = fila;

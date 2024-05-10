@@ -15,10 +15,12 @@ public class MagazzinoEntity {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column (name = "id")
-    private Integer id;
+    private Long id;
     @Column(name= "quantita")
+
     private Integer quantita;
     @Column(name="disponibilita")
+
     private Boolean disponibilita;
 
     @OneToMany(mappedBy = "magazzino", fetch = FetchType.LAZY, cascade = CascadeType.ALL)
@@ -28,7 +30,9 @@ public class MagazzinoEntity {
     private Set<SezioneEntity> sezioni;
 
     public MagazzinoEntity() {}
-    public MagazzinoEntity(Integer id, Integer quantita, Boolean disponibilita, ProdottoEntity prodotto, SezioneEntity sezione) {
+
+
+    public MagazzinoEntity(Long id, Integer quantita, Boolean disponibilita, ProdottoEntity prodotto, SezioneEntity sezione) {
         this.id = id;
         this.quantita = quantita;
         this.disponibilita = disponibilita;

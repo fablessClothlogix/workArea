@@ -14,13 +14,17 @@ public class LoginEntity {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column (name = "id")
-    private Integer id;
+    private Long id;
+
     @Column(name = "username")
     private String username;
+
     @Column (name = "password")
     private String password;
 
-    public LoginEntity(Integer id, String username, String password) {
+    public LoginEntity() {}
+
+    public LoginEntity(Long id, String username, String password) {
         this.id = id;
         this.username = username;
         this.password = password;

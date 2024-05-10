@@ -1,2 +1,13 @@
 com\fabless\clothlogix\ServletInitializer.class
+com\fabless\clothlogix\model\entities\ColoreEntity.class
+com\fabless\clothlogix\model\entities\MagazzinoEntity.class
+com\fabless\clothlogix\model\entities\ProfiloEntity.class
+com\fabless\clothlogix\model\entities\MaterialeEntity.class
+com\fabless\clothlogix\model\entities\ProdottoEntity.class
+com\fabless\clothlogix\model\entities\TipoEntity.class
 com\fabless\clothlogix\ClothlogixApplication.class
+com\fabless\clothlogix\configuration\HibernateConf.class
+com\fabless\clothlogix\model\entities\TagliaEntity.class
+com\fabless\clothlogix\model\entities\UtenteEntity.class
+com\fabless\clothlogix\model\entities\LoginEntity.class
+com\fabless\clothlogix\model\entities\SezioneEntity.class

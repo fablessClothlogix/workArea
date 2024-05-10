@@ -1,4 +1,5 @@
 package com.fabless.clothlogix.model.entities;
+
 import jakarta.persistence.*;
 import lombok.Getter;
 import lombok.Setter;
@@ -13,16 +14,19 @@ import java.util.Set;
 @Table(name = "prodotto")
 public class ProdottoEntity {
 
-        @Id
-        @GeneratedValue(strategy = GenerationType.IDENTITY)
-        @Column(name="id")
-        private Integer id;
-        @Column(name="descrizione")
-        private String descrizione;
-        @Column(name = "prezzo")
-        private Integer prezzo;
-        @Column(name = "codice_prodotto")
-        private String codiceProdotto;
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @Column(name = "id")
+    private Long id;
+
+    @Column(name = "descrizione")
+    private String descrizione;
+
+    @Column(name = "prezzo")
+    private Integer prezzo;
+
+    @Column(name = "codice_prodotto")
+    private String codiceProdotto;
 
     @ManyToMany
     @JoinTable(
@@ -63,8 +67,14 @@ public class ProdottoEntity {
             inverseJoinColumns = @JoinColumn(name = "id_sezione")
     )
     private Set<SezioneEntity> sezioni;
-    public ProdottoEntity(){}
-    public ProdottoEntity(Integer id, String descrizione, Integer prezzo, String codiceProdotto, Set<ColoreEntity> colori, Set<TagliaEntity> taglie, Set<MaterialeEntity> materiali, Set<TipoEntity> tipi, Set<SezioneEntity> sezioni) {
+
+    @ManyToOne
+    @JoinColumn(name = "magazzino_id")
+    private MagazzinoEntity magazzino;
+
+    public ProdottoEntity() {}
+
+    public ProdottoEntity(Long id, String descrizione, Integer prezzo, String codiceProdotto, Set<ColoreEntity> colori, Set<TagliaEntity> taglie, Set<MaterialeEntity> materiali, Set<TipoEntity> tipi, Set<SezioneEntity> sezioni) {
         this.id = id;
         this.descrizione = descrizione;
         this.prezzo = prezzo;

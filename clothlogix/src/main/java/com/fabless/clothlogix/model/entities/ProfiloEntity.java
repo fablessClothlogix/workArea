@@ -14,7 +14,8 @@ public class ProfiloEntity {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column (name = "id")
-    private Integer id;
+    private Long id;
+
     @Column(name = "descrizione")
     private String descrizione;
 
@@ -30,12 +31,13 @@ public class ProfiloEntity {
     @Column(name = "can_delete")
     private Boolean canDelete;
 
-    @ManyToMany(mappedBy = "profili")
-    private Set<UtenteEntity> utenti;
+    @ManyToOne(fetch = FetchType.LAZY)
+    @JoinColumn(name = "id_utenti")
+    private UtenteEntity utenti;
 
     public ProfiloEntity() {}
 
-    public ProfiloEntity(Integer id, String descrizione, Boolean canCreate, Boolean canRead, Boolean canUpdate, Boolean canDelete) {
+    public ProfiloEntity(Long id, String descrizione, Boolean canCreate, Boolean canRead, Boolean canUpdate, Boolean canDelete) {
         this.id = id;
         this.descrizione = descrizione;
         this.canCreate = canCreate;

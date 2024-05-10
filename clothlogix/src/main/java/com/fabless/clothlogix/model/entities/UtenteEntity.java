@@ -16,7 +16,7 @@ public class UtenteEntity {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "id")
-    private Integer id;
+    private Long id;
 
     @Column(name = "nome")
     private String nome;
@@ -43,14 +43,17 @@ public class UtenteEntity {
     private String nazionalita;
 
     @OneToOne
-    @JoinColumn(name = "id_utente")
-    @Column(name = "login")
+    @JoinColumn(name = "id_utente", referencedColumnName = "id")
     private LoginEntity login;
 
-    public UtenteEntity() {
-    }
+    @ManyToOne
+    @JoinColumn(name = "profilo_id")
+    private ProfiloEntity profilo;
 
-    public UtenteEntity(Integer id, String nome, String cognome, Date dataDiNascita, String indirizzo, String citta, String regione, String cap, String nazionalita, LoginEntity login) {
+
+    public UtenteEntity() {}
+
+    public UtenteEntity(Long id, String nome, String cognome, Date dataDiNascita, String indirizzo, String citta, String regione, String cap, String nazionalita, LoginEntity login) {
         this.id = id;
         this.nome = nome;
         this.cognome = cognome;
