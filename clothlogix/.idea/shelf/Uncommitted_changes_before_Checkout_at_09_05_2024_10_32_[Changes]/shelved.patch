@@ -1,0 +1,12 @@
+Index: src/main/resources/application.properties
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>spring.application.name=clothlogix\r\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>ISO-8859-1
+===================================================================
+diff --git a/src/main/resources/application.properties b/src/main/resources/application.properties
+--- a/src/main/resources/application.properties	(revision e903fee703352ae98517306266cbbda92f3bf19e)
++++ b/src/main/resources/application.properties	(date 1715243504763)
+@@ -1,1 +1,0 @@
+-spring.application.name=clothlogix

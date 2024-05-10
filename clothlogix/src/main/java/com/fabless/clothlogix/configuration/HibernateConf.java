@@ -3,6 +3,10 @@ import java.util.Properties;
 import javax.sql.DataSource;
 import org.apache.commons.dbcp2.BasicDataSource;
 import org.hibernate.SessionFactory;
+<<<<<<< HEAD
+=======
+import org.springframework.boot.autoconfigure.EnableAutoConfiguration;
+>>>>>>> origin/main
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.orm.hibernate5.HibernateTransactionManager;
@@ -26,10 +30,17 @@ public class HibernateConf {
     @Bean
     public DataSource dataSource() {
         BasicDataSource dataSource = new BasicDataSource();
+<<<<<<< HEAD
         dataSource.setDriverClassName("org.h2.Driver");
         dataSource.setUrl("jdbc:h2:mem:db;DB_CLOSE_DELAY=-1");
         dataSource.setUsername("sa");
         dataSource.setPassword("sa");
+=======
+        dataSource.setDriverClassName("com.mysql.cj.jdbc.Driver");
+        dataSource.setUrl("jdbc:mysql://localhost:3306/clothlogix?useSSL=false&serverTimezone=UTC");
+        dataSource.setUsername("root");
+        dataSource.setPassword("fabless");
+>>>>>>> origin/main
         return dataSource;
     }
 
@@ -42,10 +53,17 @@ public class HibernateConf {
 
     private Properties hibernateProperties() {
         Properties hibernateProperties = new Properties();
+<<<<<<< HEAD
         hibernateProperties.setProperty("hibernate.hbm2ddl.auto", "create-drop");
+=======
+>>>>>>> origin/main
         hibernateProperties.setProperty("hibernate.dialect", "org.hibernate.dialect.H2Dialect");
         hibernateProperties.setProperty("hibernate.show_sql", "true");
         hibernateProperties.setProperty("hibernate.format_sql", "true");
         return hibernateProperties;
     }
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> origin/main
