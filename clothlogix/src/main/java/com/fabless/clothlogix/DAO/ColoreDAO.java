@@ -4,6 +4,20 @@ import com.fabless.clothlogix.model.entities.ColoreEntity;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 
+import java.util.List;
+import java.util.Map;
+import java.util.Optional;
+
 @Repository
-public interface ColoreDAO extends JpaRepository<ColoreEntity, Long> {
+public interface ColoreDAO {
+
+    List<ColoreEntity> getListColore(Map<String, Object> risposta);
+
+    void inserisciColore(ColoreEntity coloreEntity, Map<String, Object> risposta );
+
+    void aggiornaColore(ColoreEntity coloreEntity, Map<String, Object> risposta );
+
+    void eliminaColore(Long id, Map<String, Object> risposta );
+
+    Optional<ColoreEntity> coloreFindById(Long id, Map<String, Object> risposta);
 }
