@@ -2,11 +2,12 @@ package com.fabless.clothlogix.DAO.impl;
 
 import com.fabless.clothlogix.DAO.ProdottoDAO;
 import com.fabless.clothlogix.model.entities.ProdottoEntity;
+import org.springframework.stereotype.Repository;
 
 import java.util.List;
 import java.util.Map;
 import java.util.Optional;
-
+@Repository
 public class ProdottoDAOImpl implements ProdottoDAO {
     @Override
     public List<ProdottoEntity> getListProdotto(Map<String, Object> risposta) {

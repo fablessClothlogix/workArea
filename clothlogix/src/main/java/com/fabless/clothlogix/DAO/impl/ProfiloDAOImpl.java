@@ -2,11 +2,12 @@ package com.fabless.clothlogix.DAO.impl;
 
 import com.fabless.clothlogix.DAO.ProfiloDAO;
 import com.fabless.clothlogix.model.entities.ProfiloEntity;
+import org.springframework.stereotype.Repository;
 
 import java.util.List;
 import java.util.Map;
 import java.util.Optional;
-
+@Repository
 public class ProfiloDAOImpl implements ProfiloDAO {
     @Override
     public List<ProfiloEntity> getListProfilo(Map<String, Object> risposta) {

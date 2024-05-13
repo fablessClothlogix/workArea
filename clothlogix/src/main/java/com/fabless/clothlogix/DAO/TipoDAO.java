@@ -9,7 +9,7 @@ import java.util.List;
 import java.util.Map;
 import java.util.Optional;
 
-@Repository
+
 public interface TipoDAO {
 
     List<TipoEntity> getListTipo(Map<String, Object> risposta);

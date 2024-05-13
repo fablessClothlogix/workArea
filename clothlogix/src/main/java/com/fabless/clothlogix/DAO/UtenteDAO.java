@@ -9,7 +9,7 @@ import java.util.List;
 import java.util.Map;
 import java.util.Optional;
 
-@Repository
+
 public interface UtenteDAO {
 
     List<UtenteEntity> getListUtente(Map<String, Object> risposta);

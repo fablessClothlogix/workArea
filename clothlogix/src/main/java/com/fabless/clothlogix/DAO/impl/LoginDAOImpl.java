@@ -3,11 +3,12 @@ package com.fabless.clothlogix.DAO.impl;
 import com.fabless.clothlogix.DAO.LoginDAO;
 import com.fabless.clothlogix.model.entities.ColoreEntity;
 import com.fabless.clothlogix.model.entities.LoginEntity;
+import org.springframework.stereotype.Repository;
 
 import java.util.List;
 import java.util.Map;
 import java.util.Optional;
-
+@Repository
 public class LoginDAOImpl implements LoginDAO {
     @Override
     public List<LoginEntity> getListLoing(Map<String, Object> risposta) {

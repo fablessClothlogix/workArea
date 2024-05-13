@@ -5,8 +5,34 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="374abaf7-f569-42b8-b7ba-766e75f03365" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/clothlogix/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/clothlogix/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/clothlogix/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/clothlogix/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/clothlogix/src/main/java/com/fabless/clothlogix/DAO/ColoreDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/clothlogix/src/main/java/com/fabless/clothlogix/DAO/ColoreDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/clothlogix/src/main/java/com/fabless/clothlogix/DAO/LoginDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/clothlogix/src/main/java/com/fabless/clothlogix/DAO/LoginDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/clothlogix/src/main/java/com/fabless/clothlogix/DAO/MagazzinoDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/clothlogix/src/main/java/com/fabless/clothlogix/DAO/MagazzinoDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/clothlogix/src/main/java/com/fabless/clothlogix/DAO/MaterialeDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/clothlogix/src/main/java/com/fabless/clothlogix/DAO/MaterialeDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/clothlogix/src/main/java/com/fabless/clothlogix/DAO/ProdottoDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/clothlogix/src/main/java/com/fabless/clothlogix/DAO/ProdottoDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/clothlogix/src/main/java/com/fabless/clothlogix/DAO/ProfiloDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/clothlogix/src/main/java/com/fabless/clothlogix/DAO/ProfiloDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/clothlogix/src/main/java/com/fabless/clothlogix/DAO/SezioneDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/clothlogix/src/main/java/com/fabless/clothlogix/DAO/SezioneDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/clothlogix/src/main/java/com/fabless/clothlogix/DAO/TagliaDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/clothlogix/src/main/java/com/fabless/clothlogix/DAO/TagliaDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/clothlogix/src/main/java/com/fabless/clothlogix/DAO/TipoDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/clothlogix/src/main/java/com/fabless/clothlogix/DAO/TipoDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/clothlogix/src/main/java/com/fabless/clothlogix/DAO/UtenteDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/clothlogix/src/main/java/com/fabless/clothlogix/DAO/UtenteDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/clothlogix/src/main/java/com/fabless/clothlogix/DAO/impl/ColoreDAOImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/clothlogix/src/main/java/com/fabless/clothlogix/DAO/impl/ColoreDAOImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/clothlogix/src/main/java/com/fabless/clothlogix/DAO/impl/LoginDAOImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/clothlogix/src/main/java/com/fabless/clothlogix/DAO/impl/LoginDAOImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/clothlogix/src/main/java/com/fabless/clothlogix/DAO/impl/MagazzinoDAOImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/clothlogix/src/main/java/com/fabless/clothlogix/DAO/impl/MagazzinoDAOImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/clothlogix/src/main/java/com/fabless/clothlogix/DAO/impl/MaterialeDAOImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/clothlogix/src/main/java/com/fabless/clothlogix/DAO/impl/MaterialeDAOImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/clothlogix/src/main/java/com/fabless/clothlogix/DAO/impl/ProdottoDAOImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/clothlogix/src/main/java/com/fabless/clothlogix/DAO/impl/ProdottoDAOImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/clothlogix/src/main/java/com/fabless/clothlogix/DAO/impl/ProfiloDAOImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/clothlogix/src/main/java/com/fabless/clothlogix/DAO/impl/ProfiloDAOImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/clothlogix/src/main/java/com/fabless/clothlogix/DAO/impl/SezioneDAOImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/clothlogix/src/main/java/com/fabless/clothlogix/DAO/impl/SezioneDAOImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/clothlogix/src/main/java/com/fabless/clothlogix/DAO/impl/TagliaDAOImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/clothlogix/src/main/java/com/fabless/clothlogix/DAO/impl/TagliaDAOImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/clothlogix/src/main/java/com/fabless/clothlogix/DAO/impl/TipoDAOImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/clothlogix/src/main/java/com/fabless/clothlogix/DAO/impl/TipoDAOImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/clothlogix/src/main/java/com/fabless/clothlogix/DAO/impl/UtenteDAOImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/clothlogix/src/main/java/com/fabless/clothlogix/DAO/impl/UtenteDAOImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/clothlogix/src/main/java/com/fabless/clothlogix/controller/ColoreController.java" beforeDir="false" afterPath="$PROJECT_DIR$/clothlogix/src/main/java/com/fabless/clothlogix/controller/ColoreController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/clothlogix/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/clothlogix/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/clothlogix/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/clothlogix/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/clothlogix/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/clothlogix/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/clothlogix/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/clothlogix/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/clothlogix/target/surefire-reports/TEST-com.fabless.clothlogix.ClothlogixApplicationTests.xml" beforeDir="false" afterPath="$PROJECT_DIR$/clothlogix/target/surefire-reports/TEST-com.fabless.clothlogix.ClothlogixApplicationTests.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/clothlogix/target/surefire-reports/com.fabless.clothlogix.ClothlogixApplicationTests.txt" beforeDir="false" afterPath="$PROJECT_DIR$/clothlogix/target/surefire-reports/com.fabless.clothlogix.ClothlogixApplicationTests.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -28,18 +54,18 @@
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
-  "lastFilter": {
-    "state": "OPEN",
-    "assignee": "SalvatoreSilvestri"
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;SalvatoreSilvestri&quot;
   }
-}]]></component>
-  <component name="GithubPullRequestsUISettings"><![CDATA[{
-  "selectedUrlAndAccountId": {
-    "url": "https://github.com/fablessClothlogix/workArea.git",
-    "accountId": "3827ee42-4978-4765-aec0-2bdfa7ebede9"
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/fablessClothlogix/workArea.git&quot;,
+    &quot;accountId&quot;: &quot;3827ee42-4978-4765-aec0-2bdfa7ebede9&quot;
   }
-}]]></component>
+}</component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 0
 }</component>
@@ -54,6 +80,7 @@
     "Application.ClothlogixApplication.executor": "Run",
     "Maven.clothlogix [clean].executor": "Run",
     "Maven.clothlogix [install].executor": "Run",
+    "Maven.clothlogix [verify].executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "kotlin-language-version-configured": "true",
     "last_opened_file_path": "C:/Sviluppo/workArea/clothlogix",
@@ -73,6 +100,19 @@
       <option name="presentableId" value="Default" />
       <updated>1715089300604</updated>
     </task>
+    <task id="LOCAL-00001" summary="commit 2.0.0 emerson">
+      <option name="closed" value="true" />
+      <created>1715587434646</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1715587434646</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="commit 2.0.0 emerson" />
+    <option name="LAST_COMMIT_MESSAGE" value="commit 2.0.0 emerson" />
   </component>
 </project>

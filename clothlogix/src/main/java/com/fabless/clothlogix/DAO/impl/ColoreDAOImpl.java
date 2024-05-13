@@ -2,11 +2,12 @@ package com.fabless.clothlogix.DAO.impl;
 
 import com.fabless.clothlogix.DAO.ColoreDAO;
 import com.fabless.clothlogix.model.entities.ColoreEntity;
+import org.springframework.stereotype.Repository;
 
 import java.util.List;
 import java.util.Map;
 import java.util.Optional;
-
+@Repository
 public class ColoreDAOImpl implements ColoreDAO {
     @Override
     public List<ColoreEntity> getListColore(Map<String, Object> risposta) {

@@ -8,7 +8,7 @@ import java.util.List;
 import java.util.Map;
 import java.util.Optional;
 
-@Repository
+
 public interface ColoreDAO {
 
     List<ColoreEntity> getListColore(Map<String, Object> risposta);

@@ -2,11 +2,12 @@ package com.fabless.clothlogix.DAO.impl;
 
 import com.fabless.clothlogix.DAO.SezioneDAO;
 import com.fabless.clothlogix.model.entities.SezioneEntity;
+import org.springframework.stereotype.Repository;
 
 import java.util.List;
 import java.util.Map;
 import java.util.Optional;
-
+@Repository
 public class SezioneDAOImpl implements SezioneDAO {
     @Override
     public List<SezioneEntity> getListSezione(Map<String, Object> risposta) {

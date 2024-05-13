@@ -2,11 +2,12 @@ package com.fabless.clothlogix.DAO.impl;
 
 import com.fabless.clothlogix.DAO.TagliaDAO;
 import com.fabless.clothlogix.model.entities.TagliaEntity;
+import org.springframework.stereotype.Repository;
 
 import java.util.List;
 import java.util.Map;
 import java.util.Optional;
-
+@Repository
 public class TagliaDAOImpl implements TagliaDAO {
     @Override
     public List<TagliaEntity> getListTaglia(Map<String, Object> risposta) {
