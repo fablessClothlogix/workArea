@@ -1,6 +1,7 @@
 package com.fabless.clothlogix.Service.Impl;
 
 import com.fabless.clothlogix.DAO.MaterialeDAO;
+import com.fabless.clothlogix.DAO.impl.MaterialeDAOImpl;
 import com.fabless.clothlogix.model.entities.ColoreEntity;
 import com.fabless.clothlogix.model.entities.MaterialeEntity;
 import jakarta.persistence.EntityNotFoundException;
@@ -18,7 +19,7 @@ public class MaterialeService {
     private MaterialeDAO repo;
 
     @Autowired
-    public  MaterialeService(MaterialeDAO repo){
+    public  MaterialeService(MaterialeDAOImpl repo){
         this.repo = repo;
     }
 

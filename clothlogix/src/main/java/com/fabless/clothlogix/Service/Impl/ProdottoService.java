@@ -1,6 +1,7 @@
 package com.fabless.clothlogix.Service.Impl;
 
 import com.fabless.clothlogix.DAO.ProdottoDAO;
+import com.fabless.clothlogix.DAO.impl.ProdottoDAOImpl;
 import com.fabless.clothlogix.model.entities.ColoreEntity;
 import com.fabless.clothlogix.model.entities.ProdottoEntity;
 import jakarta.persistence.EntityNotFoundException;
@@ -15,10 +16,10 @@ import java.util.Optional;
 @Service
 public class ProdottoService {
 
-    private ProdottoDAO repo;
+    private ProdottoDAOImpl repo;
 
     @Autowired
-    public  ProdottoService(ProdottoDAO repo){
+    public  ProdottoService(ProdottoDAOImpl repo){
         this.repo = repo;
     }
 
