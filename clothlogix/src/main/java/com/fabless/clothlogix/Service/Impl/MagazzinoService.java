@@ -1,10 +1,10 @@
 package com.fabless.clothlogix.Service.Impl;
 
-import com.fabless.clothlogix.DAO.MagazzinoDAO;
+
 import com.fabless.clothlogix.DAO.impl.MagazzinoDAOImpl;
-import com.fabless.clothlogix.model.entities.ColoreEntity;
+
 import com.fabless.clothlogix.model.entities.MagazzinoEntity;
-import jakarta.persistence.EntityNotFoundException;
+
 import org.hibernate.exception.DataException;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -37,11 +37,11 @@ public class MagazzinoService {
     }
 
     @Transactional
-    public void upload(MagazzinoEntity magazzinoEntity, Map<String, Object> risposta) throws EntityNotFoundException, DataException{
+    public void upload(MagazzinoEntity magazzinoEntity, Map<String, Object> risposta) throws  DataException{
         repo.aggiornaMagazzino(magazzinoEntity,risposta);
     }
     @Transactional
-    public void deleteByid(Long id, Map<String, Object> risposta) throws EntityNotFoundException, DataException{
+    public void deleteByid(Long id, Map<String, Object> risposta) throws  DataException{
         repo.eliminaMagazzino(id, risposta);
     }
 }

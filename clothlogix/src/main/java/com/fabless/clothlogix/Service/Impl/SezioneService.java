@@ -1,10 +1,10 @@
 package com.fabless.clothlogix.Service.Impl;
 
-import com.fabless.clothlogix.DAO.SezioneDAO;
+
 import com.fabless.clothlogix.DAO.impl.SezioneDAOImpl;
-import com.fabless.clothlogix.model.entities.ColoreEntity;
+
 import com.fabless.clothlogix.model.entities.SezioneEntity;
-import jakarta.persistence.EntityNotFoundException;
+
 import org.hibernate.exception.DataException;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -37,11 +37,11 @@ public class SezioneService {
     }
 
     @Transactional
-    public void upload(SezioneEntity sezioneEntity, Map<String, Object> risposta) throws EntityNotFoundException, DataException{
+    public void upload(SezioneEntity sezioneEntity, Map<String, Object> risposta) throws DataException{
         repo.aggiornaSezione(sezioneEntity,risposta);
     }
     @Transactional
-    public void deleteByid(Long id, Map<String, Object> risposta) throws EntityNotFoundException, DataException{
+    public void deleteByid(Long id, Map<String, Object> risposta) throws  DataException{
         repo.eliminaSezione(id, risposta);
     }
 }

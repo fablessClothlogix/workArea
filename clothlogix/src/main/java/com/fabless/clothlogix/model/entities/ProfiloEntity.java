@@ -1,9 +1,10 @@
 package com.fabless.clothlogix.model.entities;
+
 import jakarta.persistence.*;
 import lombok.*;
 
-import java.sql.Date;
-import java.util.Set;
+
+
 
 @Getter
 @Setter

@@ -1,8 +1,12 @@
 package com.fabless.clothlogix.model.entities;
+
 import jakarta.persistence.*;
 import lombok.Getter;
 import lombok.Setter;
 import lombok.ToString;
+
+
+
 
 @Getter
 @Setter
@@ -12,7 +16,7 @@ import lombok.ToString;
 public class MaterialeEntity {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    @Column (name = "id")
+    @Column(name = "id")
     private Long id;
 
     @Column(name =  "descrizione")

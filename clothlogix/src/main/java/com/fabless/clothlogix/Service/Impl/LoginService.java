@@ -1,12 +1,12 @@
 package com.fabless.clothlogix.Service.Impl;
 
 
-import com.fabless.clothlogix.DAO.LoginDAO;
+
 
 import com.fabless.clothlogix.DAO.impl.LoginDAOImpl;
-import com.fabless.clothlogix.model.entities.ColoreEntity;
+
 import com.fabless.clothlogix.model.entities.LoginEntity;
-import jakarta.persistence.EntityNotFoundException;
+
 import org.hibernate.exception.DataException;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -38,11 +38,11 @@ public class LoginService {
     }
 
     @Transactional
-    public void upload(LoginEntity loginEntity, Map<String, Object> risposta) throws EntityNotFoundException, DataException{
+    public void upload(LoginEntity loginEntity, Map<String, Object> risposta) throws  DataException{
         repo.aggiornaLogin(loginEntity,risposta);
     }
     @Transactional
-    public void deleteByid(Long id, Map<String, Object> risposta) throws EntityNotFoundException, DataException{
+    public void deleteByid(Long id, Map<String, Object> risposta) throws DataException{
         repo.eliminaLogin(id, risposta);
     }
 }

@@ -2,11 +2,12 @@ package com.fabless.clothlogix.DAO.impl;
 
 import com.fabless.clothlogix.DAO.TipoDAO;
 import com.fabless.clothlogix.model.entities.TipoEntity;
+import org.springframework.stereotype.Repository;
 
 import java.util.List;
 import java.util.Map;
 import java.util.Optional;
-
+@Repository
 public class TipoDAOImpl implements TipoDAO {
     @Override
     public List<TipoEntity> getListTipo(Map<String, Object> risposta) {

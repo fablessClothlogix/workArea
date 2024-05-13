@@ -1,8 +1,8 @@
 package com.fabless.clothlogix.Service;
 
-import com.fabless.clothlogix.model.entities.ColoreEntity;
+
 import com.fabless.clothlogix.model.entities.LoginEntity;
-import jakarta.persistence.EntityNotFoundException;
+
 import org.hibernate.exception.DataException;
 
 import java.util.Map;
@@ -16,7 +16,7 @@ public interface AbstractLoginService {
 
     void create(LoginEntity coloreEntity, Map<String, Object> risposta) throws DataException;
 
-    void upload(LoginEntity coloreEntity, Map<String, Object> risposta) throws EntityNotFoundException, DataException;
+    void upload(LoginEntity coloreEntity, Map<String, Object> risposta) throws  DataException;
 
-    void deleteByid(Long id, Map<String, Object> risposta) throws EntityNotFoundException, DataException;
+    void deleteByid(Long id, Map<String, Object> risposta) throws  DataException;
 }

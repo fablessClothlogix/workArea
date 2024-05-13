@@ -5,7 +5,7 @@ package com.fabless.clothlogix.Service.Impl;
 import com.fabless.clothlogix.DAO.impl.TagliaDAOImpl;
 
 import com.fabless.clothlogix.model.entities.TagliaEntity;
-import jakarta.persistence.EntityNotFoundException;
+
 import org.hibernate.exception.DataException;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -38,11 +38,11 @@ public class TagliaService {
     }
 
     @Transactional
-    public void upload(TagliaEntity tagliaEntity, Map<String, Object> risposta) throws EntityNotFoundException, DataException{
+    public void upload(TagliaEntity tagliaEntity, Map<String, Object> risposta) throws  DataException{
         repo.aggiornaTaglia(tagliaEntity,risposta);
     }
     @Transactional
-    public void deleteByid(Long id, Map<String, Object> risposta) throws EntityNotFoundException, DataException{
+    public void deleteByid(Long id, Map<String, Object> risposta) throws  DataException{
         repo.eliminaTaglia(id, risposta);
     }
 }

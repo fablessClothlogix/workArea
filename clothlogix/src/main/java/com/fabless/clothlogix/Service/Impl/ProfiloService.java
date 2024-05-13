@@ -1,10 +1,10 @@
 package com.fabless.clothlogix.Service.Impl;
 
-import com.fabless.clothlogix.DAO.ProfiloDAO;
+
 import com.fabless.clothlogix.DAO.impl.ProfiloDAOImpl;
-import com.fabless.clothlogix.model.entities.ColoreEntity;
+
 import com.fabless.clothlogix.model.entities.ProfiloEntity;
-import jakarta.persistence.EntityNotFoundException;
+
 import org.hibernate.exception.DataException;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -37,11 +37,11 @@ public class ProfiloService {
     }
 
     @Transactional
-    public void upload(ProfiloEntity profiloEntity, Map<String, Object> risposta) throws EntityNotFoundException, DataException{
+    public void upload(ProfiloEntity profiloEntity, Map<String, Object> risposta) throws  DataException{
         repo.aggiornaProfilo(profiloEntity,risposta);
     }
     @Transactional
-    public void deleteByid(Long id, Map<String, Object> risposta) throws EntityNotFoundException, DataException{
+    public void deleteByid(Long id, Map<String, Object> risposta) throws DataException{
         repo.eliminaProfilo(id, risposta);
     }
 }

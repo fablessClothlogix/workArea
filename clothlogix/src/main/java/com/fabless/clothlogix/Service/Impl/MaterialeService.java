@@ -2,9 +2,9 @@ package com.fabless.clothlogix.Service.Impl;
 
 import com.fabless.clothlogix.DAO.MaterialeDAO;
 import com.fabless.clothlogix.DAO.impl.MaterialeDAOImpl;
-import com.fabless.clothlogix.model.entities.ColoreEntity;
+
 import com.fabless.clothlogix.model.entities.MaterialeEntity;
-import jakarta.persistence.EntityNotFoundException;
+
 import org.hibernate.exception.DataException;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -37,11 +37,11 @@ public class MaterialeService {
     }
 
     @Transactional
-    public void upload(MaterialeEntity materialeEntity, Map<String, Object> risposta) throws EntityNotFoundException, DataException{
+    public void upload(MaterialeEntity materialeEntity, Map<String, Object> risposta) throws  DataException{
         repo.aggiornaMateriale(materialeEntity,risposta);
     }
     @Transactional
-    public void deleteByid(Long id, Map<String, Object> risposta) throws EntityNotFoundException, DataException{
+    public void deleteByid(Long id, Map<String, Object> risposta) throws  DataException{
         repo.eliminaMateriale(id, risposta);
     }
 }

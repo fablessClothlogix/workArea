@@ -1,7 +1,7 @@
 package com.fabless.clothlogix.Service;
 
 import com.fabless.clothlogix.model.entities.ColoreEntity;
-import jakarta.persistence.EntityNotFoundException;
+
 import org.hibernate.exception.DataException;
 
 import java.util.Map;
@@ -15,8 +15,8 @@ public interface AbstractColoreService {
 
     void create(ColoreEntity coloreEntity, Map<String, Object> risposta) throws DataException;
 
-    void upload(ColoreEntity coloreEntity, Map<String, Object> risposta) throws EntityNotFoundException, DataException;
+    void upload(ColoreEntity coloreEntity, Map<String, Object> risposta) throws  DataException;
 
-    void deleteByid(Long id, Map<String, Object> risposta) throws EntityNotFoundException, DataException;
+    void deleteByid(Long id, Map<String, Object> risposta) throws  DataException;
 
 }

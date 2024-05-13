@@ -1,8 +1,8 @@
 package com.fabless.clothlogix.Service;
 
-import com.fabless.clothlogix.model.entities.ColoreEntity;
+
 import com.fabless.clothlogix.model.entities.ProfiloEntity;
-import jakarta.persistence.EntityNotFoundException;
+
 import org.hibernate.exception.DataException;
 
 import java.util.Map;
@@ -16,7 +16,7 @@ public interface AbstractProfiloService {
 
     void create(ProfiloEntity profiloEntity, Map<String, Object> risposta) throws DataException;
 
-    void upload(ProfiloEntity profiloEntity, Map<String, Object> risposta) throws EntityNotFoundException, DataException;
+    void upload(ProfiloEntity profiloEntity, Map<String, Object> risposta) throws  DataException;
 
-    void deleteByid(Long id, Map<String, Object> risposta) throws EntityNotFoundException, DataException;
+    void deleteByid(Long id, Map<String, Object> risposta) throws  DataException;
 }
