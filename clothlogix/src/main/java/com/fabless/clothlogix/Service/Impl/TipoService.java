@@ -3,6 +3,8 @@ package com.fabless.clothlogix.Service.Impl;
 
 import com.fabless.clothlogix.DAO.TipoDAO;
 
+import com.fabless.clothlogix.DAO.impl.TipoDAOImpl;
+import com.fabless.clothlogix.model.entities.ColoreEntity;
 import com.fabless.clothlogix.model.entities.TipoEntity;
 import jakarta.persistence.EntityNotFoundException;
 import org.hibernate.exception.DataException;
@@ -10,38 +12,38 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
+import java.util.Map;
 import java.util.Optional;
 
 @Service
 public class TipoService {
 
-    private TipoDAO repo;
+    private TipoDAOImpl repo;
 
     @Autowired
-    public  TipoService(TipoDAO repo){
+    public  TipoService(TipoDAOImpl repo){
         this.repo = repo;
     }
 
-    public Iterable<TipoEntity> findAll() throws DataException {
-        return repo.findAll();
+
+    public Iterable<TipoEntity> findAll(Map<String, Object> risposta) throws DataException {
+        return repo.getListTipo(risposta);
     }
 
-    public Optional<TipoEntity> findById(Long id) throws DataException{
-        return repo.findById(id);
+    public Optional<TipoEntity> findById(Long id,Map<String, Object> risposta) throws DataException{
+        return repo.tipoFindById(id, risposta);
+    }
+    @Transactional
+    public void create(TipoEntity tipoEntity, Map<String, Object> risposta) throws DataException{
+        repo.inserisciTipo(tipoEntity,risposta);
     }
 
     @Transactional
-    public TipoEntity create(TipoEntity tipoEntity) throws DataException{
-        return  repo.save(tipoEntity);
+    public void upload(TipoEntity tipoEntity, Map<String, Object> risposta) throws EntityNotFoundException, DataException{
+        repo.aggiornaTipo(tipoEntity,risposta);
     }
-
     @Transactional
-    public void upload(TipoEntity tipoEntity) throws EntityNotFoundException, DataException{
-        repo.save(tipoEntity);
-    }
-
-    @Transactional
-    public void deleteByid(Long id) throws EntityNotFoundException, DataException{
-        repo.deleteById(id);
+    public void deleteByid(Long id, Map<String, Object> risposta) throws EntityNotFoundException, DataException{
+        repo.eliminaTipo(id, risposta);
     }
 }

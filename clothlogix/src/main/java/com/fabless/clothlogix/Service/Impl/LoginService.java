@@ -3,6 +3,7 @@ package com.fabless.clothlogix.Service.Impl;
 
 import com.fabless.clothlogix.DAO.LoginDAO;
 
+import com.fabless.clothlogix.DAO.impl.LoginDAOImpl;
 import com.fabless.clothlogix.model.entities.ColoreEntity;
 import com.fabless.clothlogix.model.entities.LoginEntity;
 import jakarta.persistence.EntityNotFoundException;
@@ -17,10 +18,10 @@ import java.util.Optional;
 @Service
 public class LoginService {
 
-    private LoginDAO repo;
+    private LoginDAOImpl repo;
 
     @Autowired
-    public  LoginService(LoginDAO repo){
+    public  LoginService(LoginDAOImpl repo){
         this.repo = repo;
     }
 

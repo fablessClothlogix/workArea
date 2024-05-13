@@ -1,6 +1,8 @@
 package com.fabless.clothlogix.Service.Impl;
 
 import com.fabless.clothlogix.DAO.ProfiloDAO;
+import com.fabless.clothlogix.DAO.impl.ProfiloDAOImpl;
+import com.fabless.clothlogix.model.entities.ColoreEntity;
 import com.fabless.clothlogix.model.entities.ProfiloEntity;
 import jakarta.persistence.EntityNotFoundException;
 import org.hibernate.exception.DataException;
@@ -8,35 +10,38 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
+import java.util.Map;
 import java.util.Optional;
 
 @Service
 public class ProfiloService {
 
-    private ProfiloDAO repo;
+    private ProfiloDAOImpl repo;
 
     @Autowired
-    public  ProfiloService(ProfiloDAO repo){
+    public  ProfiloService(ProfiloDAOImpl repo){
         this.repo = repo;
     }
 
-    public Iterable<ProfiloEntity> findAll() throws DataException {
-        return repo.findAll();
+
+    public Iterable<ProfiloEntity> findAll(Map<String, Object> risposta) throws DataException {
+        return repo.getListProfilo(risposta);
     }
 
-    public Optional<ProfiloEntity> findById(Long id) throws DataException{
-        return repo.findById(id);
+    public Optional<ProfiloEntity> findById(Long id,Map<String, Object> risposta) throws DataException{
+        return repo.profiloFindById(id, risposta);
     }
     @Transactional
-    public ProfiloEntity create(ProfiloEntity profiloEntity) throws DataException{
-        return  repo.save(profiloEntity);
+    public void create(ProfiloEntity profiloEntity, Map<String, Object> risposta) throws DataException{
+        repo.inserisciProfilo(profiloEntity,risposta);
+    }
+
+    @Transactional
+    public void upload(ProfiloEntity profiloEntity, Map<String, Object> risposta) throws EntityNotFoundException, DataException{
+        repo.aggiornaProfilo(profiloEntity,risposta);
     }
     @Transactional
-    public void upload(ProfiloEntity profiloEntity) throws EntityNotFoundException, DataException{
-        repo.save(profiloEntity);
-    }
-    @Transactional
-    public void deleteByid(Long id) throws EntityNotFoundException, DataException{
-        repo.deleteById(id);
+    public void deleteByid(Long id, Map<String, Object> risposta) throws EntityNotFoundException, DataException{
+        repo.eliminaProfilo(id, risposta);
     }
 }

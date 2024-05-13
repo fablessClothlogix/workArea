@@ -1,6 +1,8 @@
 package com.fabless.clothlogix.Service.Impl;
 
 import com.fabless.clothlogix.DAO.SezioneDAO;
+import com.fabless.clothlogix.DAO.impl.SezioneDAOImpl;
+import com.fabless.clothlogix.model.entities.ColoreEntity;
 import com.fabless.clothlogix.model.entities.SezioneEntity;
 import jakarta.persistence.EntityNotFoundException;
 import org.hibernate.exception.DataException;
@@ -8,35 +10,38 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
+import java.util.Map;
 import java.util.Optional;
 
 @Service
 public class SezioneService {
 
-    private SezioneDAO repo;
+    private SezioneDAOImpl repo;
 
     @Autowired
-    public  SezioneService(SezioneDAO repo){
+    public  SezioneService(SezioneDAOImpl repo){
         this.repo = repo;
     }
 
-    public Iterable<SezioneEntity> findAll() throws DataException {
-        return repo.findAll();
+
+    public Iterable<SezioneEntity> findAll(Map<String, Object> risposta) throws DataException {
+        return repo.getListSezione(risposta);
     }
 
-    public Optional<SezioneEntity> findById(Long id) throws DataException{
-        return repo.findById(id);
+    public Optional<SezioneEntity> findById(Long id,Map<String, Object> risposta) throws DataException{
+        return repo.sezioneFindById(id, risposta);
     }
     @Transactional
-    public SezioneEntity create(SezioneEntity sezioneEntity) throws DataException{
-        return  repo.save(sezioneEntity);
+    public void create(SezioneEntity sezioneEntity, Map<String, Object> risposta) throws DataException{
+        repo.inserisciSezione(sezioneEntity,risposta);
+    }
+
+    @Transactional
+    public void upload(SezioneEntity sezioneEntity, Map<String, Object> risposta) throws EntityNotFoundException, DataException{
+        repo.aggiornaSezione(sezioneEntity,risposta);
     }
     @Transactional
-    public void upload(SezioneEntity sezioneEntity) throws EntityNotFoundException, DataException{
-        repo.save(sezioneEntity);
-    }
-    @Transactional
-    public void deleteByid(Long id) throws EntityNotFoundException, DataException{
-        repo.deleteById(id);
+    public void deleteByid(Long id, Map<String, Object> risposta) throws EntityNotFoundException, DataException{
+        repo.eliminaSezione(id, risposta);
     }
 }

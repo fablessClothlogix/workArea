@@ -1,6 +1,7 @@
 package com.fabless.clothlogix.Service.Impl;
 
 import com.fabless.clothlogix.DAO.ColoreDAO;
+import com.fabless.clothlogix.DAO.impl.ColoreDAOImpl;
 import com.fabless.clothlogix.Service.AbstractColoreService;
 import com.fabless.clothlogix.model.entities.ColoreEntity;
 import jakarta.persistence.EntityNotFoundException;
@@ -14,10 +15,10 @@ import java.util.Optional;
 @Service
 public class ColoreService implements AbstractColoreService {
 
-    private ColoreDAO repo;
+    private ColoreDAOImpl repo;
 
     @Autowired
-    public  ColoreService(ColoreDAO repo){
+    public  ColoreService(ColoreDAOImpl repo){
         this.repo = repo;
     }
 
