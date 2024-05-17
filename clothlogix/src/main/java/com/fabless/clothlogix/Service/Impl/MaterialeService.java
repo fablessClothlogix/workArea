@@ -1,7 +1,7 @@
 package com.fabless.clothlogix.Service.Impl;
 
 import com.fabless.clothlogix.DAO.MaterialeDAO;
-import com.fabless.clothlogix.DAO.impl.MaterialeDAOImpl;
+
 
 import com.fabless.clothlogix.model.entities.MaterialeEntity;
 
@@ -19,7 +19,7 @@ public class MaterialeService {
     private MaterialeDAO repo;
 
     @Autowired
-    public  MaterialeService(MaterialeDAOImpl repo){
+    public  MaterialeService(MaterialeDAO repo){
         this.repo = repo;
     }
 

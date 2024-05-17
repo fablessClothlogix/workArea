@@ -3,7 +3,7 @@ package com.fabless.clothlogix.model.entities;
 import jakarta.persistence.*;
 import lombok.*;
 
-
+import java.util.Set;
 
 
 @Getter
@@ -32,18 +32,20 @@ public class ProfiloEntity {
     @Column(name = "can_delete")
     private Boolean canDelete;
 
-    @ManyToOne(fetch = FetchType.LAZY)
+
+    @OneToMany
     @JoinColumn(name = "id_utenti")
-    private UtenteEntity utenti;
+    private Set<UtenteEntity> utenti;
 
     public ProfiloEntity() {}
 
-    public ProfiloEntity(Long id, String descrizione, Boolean canCreate, Boolean canRead, Boolean canUpdate, Boolean canDelete) {
+    public ProfiloEntity(Long id, String descrizione, Boolean canCreate, Boolean canRead, Boolean canUpdate, Boolean canDelete, Set<UtenteEntity> utenti) {
         this.id = id;
         this.descrizione = descrizione;
         this.canCreate = canCreate;
         this.canRead = canRead;
         this.canUpdate = canUpdate;
         this.canDelete = canDelete;
+        this.utenti = utenti;
     }
 }

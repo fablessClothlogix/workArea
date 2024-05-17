@@ -1,6 +1,7 @@
 package com.fabless.clothlogix.Service.Impl;
 
 
+import com.fabless.clothlogix.DAO.MagazzinoDAO;
 import com.fabless.clothlogix.DAO.impl.MagazzinoDAOImpl;
 
 import com.fabless.clothlogix.model.entities.MagazzinoEntity;
@@ -16,10 +17,10 @@ import java.util.Optional;
 @Service
 public class MagazzinoService {
 
-    private MagazzinoDAOImpl repo;
+    private MagazzinoDAO repo;
 
     @Autowired
-    public  MagazzinoService(MagazzinoDAOImpl repo){
+    public  MagazzinoService(MagazzinoDAO repo){
         this.repo = repo;
     }
 

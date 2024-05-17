@@ -2,6 +2,8 @@ package com.fabless.clothlogix.DAO.impl;
 
 import com.fabless.clothlogix.DAO.ColoreDAO;
 import com.fabless.clothlogix.model.entities.ColoreEntity;
+import jakarta.persistence.EntityManager;
+import jakarta.persistence.PersistenceContext;
 import org.springframework.stereotype.Repository;
 
 import java.util.List;
@@ -9,6 +11,11 @@ import java.util.Map;
 import java.util.Optional;
 @Repository
 public class ColoreDAOImpl implements ColoreDAO {
+
+    @PersistenceContext
+    private EntityManager entityManager;
+
+
     @Override
     public List<ColoreEntity> getListColore(Map<String, Object> risposta) {
         return List.of();
@@ -16,6 +23,14 @@ public class ColoreDAOImpl implements ColoreDAO {
 
     @Override
     public void inserisciColore(ColoreEntity coloreEntity, Map<String, Object> risposta) {
+        try {
+            entityManager.persist(coloreEntity);
+            risposta.put("successo", true);
+            risposta.put("messaggio", "Colore inserito con successo.");
+        } catch (Exception e) {
+            risposta.put("successo", false);
+            risposta.put("messaggio", "Errore durante l'inserimento del colore: " + e.getMessage());
+        }
 
     }
 

@@ -25,10 +25,12 @@ public class MagazzinoEntity {
 
     private Boolean disponibilita;
 
-    @OneToMany(mappedBy = "magazzino", fetch = FetchType.LAZY, cascade = CascadeType.ALL)
+    @OneToMany
+    @JoinColumn(name = "id_prodotto")
     private Set<ProdottoEntity> prodotti;
 
-    @OneToMany(mappedBy = "magazzino", fetch = FetchType.LAZY, cascade = CascadeType.ALL)
+    @OneToMany
+    @JoinColumn(name = "id_sezione")
     private Set<SezioneEntity> sezioni;
 
     public MagazzinoEntity() {}

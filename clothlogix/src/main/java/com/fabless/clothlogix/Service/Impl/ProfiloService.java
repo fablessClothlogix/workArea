@@ -1,6 +1,7 @@
 package com.fabless.clothlogix.Service.Impl;
 
 
+import com.fabless.clothlogix.DAO.ProfiloDAO;
 import com.fabless.clothlogix.DAO.impl.ProfiloDAOImpl;
 
 import com.fabless.clothlogix.model.entities.ProfiloEntity;
@@ -16,10 +17,10 @@ import java.util.Optional;
 @Service
 public class ProfiloService {
 
-    private ProfiloDAOImpl repo;
+    private ProfiloDAO repo;
 
     @Autowired
-    public  ProfiloService(ProfiloDAOImpl repo){
+    public  ProfiloService(ProfiloDAO repo){
         this.repo = repo;
     }
 

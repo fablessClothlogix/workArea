@@ -2,6 +2,7 @@ package com.fabless.clothlogix.model.entities;
 
 
 import jakarta.persistence.*;
+import lombok.Data;
 import lombok.Getter;
 import lombok.Setter;
 import lombok.ToString;
@@ -10,6 +11,8 @@ import lombok.ToString;
 
 import java.sql.Date;
 
+
+@Data
 @Getter
 @Setter
 @ToString
@@ -46,13 +49,8 @@ public class UtenteEntity {
     private String nazionalita;
 
     @OneToOne
-    @JoinColumn(name = "id_utente", referencedColumnName = "id")
+    @JoinColumn(name = "id_login")
     private LoginEntity login;
-
-    @ManyToOne
-    @JoinColumn(name = "profilo_id")
-    private ProfiloEntity profilo;
-
 
     public UtenteEntity() {}
 

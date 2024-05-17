@@ -5,7 +5,7 @@ import lombok.Getter;
 import lombok.Setter;
 import lombok.ToString;
 
-
+import java.util.Set;
 
 
 @Getter
@@ -21,6 +21,9 @@ public class TagliaEntity {
 
     @Column(name =  "descrizione")
     private String descrizione;
+
+    @ManyToMany(mappedBy = "taglie")
+    private Set<ProdottoEntity> prodotti ;
 
     public TagliaEntity(){}
 

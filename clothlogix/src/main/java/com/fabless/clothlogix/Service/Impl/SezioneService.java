@@ -1,6 +1,7 @@
 package com.fabless.clothlogix.Service.Impl;
 
 
+import com.fabless.clothlogix.DAO.SezioneDAO;
 import com.fabless.clothlogix.DAO.impl.SezioneDAOImpl;
 
 import com.fabless.clothlogix.model.entities.SezioneEntity;
@@ -16,10 +17,10 @@ import java.util.Optional;
 @Service
 public class SezioneService {
 
-    private SezioneDAOImpl repo;
+    private SezioneDAO repo;
 
     @Autowired
-    public  SezioneService(SezioneDAOImpl repo){
+    public  SezioneService(SezioneDAO repo){
         this.repo = repo;
     }
 

@@ -33,7 +33,7 @@ public class ProdottoEntity {
 
     @ManyToMany
     @JoinTable(
-            name = "prodotto_colore_rel",
+    name = "prodotto_colore_rel",
             joinColumns = @JoinColumn(name = "id_prodotto"),
             inverseJoinColumns = @JoinColumn(name = "id_colore")
     )
@@ -63,21 +63,16 @@ public class ProdottoEntity {
     )
     private Set<TipoEntity> tipi;
 
-    @ManyToMany
-    @JoinTable(
-            name = "prodotto_sezione_rel",
-            joinColumns = @JoinColumn(name = "id_prodotto"),
-            inverseJoinColumns = @JoinColumn(name = "id_sezione")
-    )
-    private Set<SezioneEntity> sezioni;
-
     @ManyToOne
-    @JoinColumn(name = "magazzino_id")
-    private MagazzinoEntity magazzino;
+    @JoinColumn(name = "id_sezione")
+    private SezioneEntity sezioni;
+
+//    @ManyToOne(mappedBy = "prodotti")
+//    private MagazzinoEntity magazzino;
 
     public ProdottoEntity() {}
 
-    public ProdottoEntity(Long id, String descrizione, Integer prezzo, String codiceProdotto, Set<ColoreEntity> colori, Set<TagliaEntity> taglie, Set<MaterialeEntity> materiali, Set<TipoEntity> tipi, Set<SezioneEntity> sezioni) {
+    public ProdottoEntity(Long id, String descrizione, Integer prezzo, String codiceProdotto, Set<ColoreEntity> colori, Set<TagliaEntity> taglie, Set<MaterialeEntity> materiali, Set<TipoEntity> tipi, SezioneEntity sezioni) {
         this.id = id;
         this.descrizione = descrizione;
         this.prezzo = prezzo;
