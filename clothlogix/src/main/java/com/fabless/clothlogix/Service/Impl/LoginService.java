@@ -3,7 +3,8 @@ package com.fabless.clothlogix.Service.Impl;
 
 
 
-import com.fabless.clothlogix.DAO.impl.LoginDAOImpl;
+import com.fabless.clothlogix.DAO.LoginDAO;
+
 
 import com.fabless.clothlogix.model.entities.LoginEntity;
 
@@ -18,10 +19,10 @@ import java.util.Optional;
 @Service
 public class LoginService {
 
-    private LoginDAOImpl repo;
+    private LoginDAO repo;
 
     @Autowired
-    public  LoginService(LoginDAOImpl repo){
+    public  LoginService(LoginDAO repo){
         this.repo = repo;
     }
 

@@ -1,11 +1,8 @@
 package com.fabless.clothlogix.Service.Impl;
 
-
-
-import com.fabless.clothlogix.DAO.impl.UtenteDAOImpl;
+import com.fabless.clothlogix.DAO.UtenteDAO;
 import com.fabless.clothlogix.model.entities.ColoreEntity;
 import com.fabless.clothlogix.model.entities.UtenteEntity;
-
 import org.hibernate.exception.DataException;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -17,10 +14,10 @@ import java.util.Optional;
 @Service
 public class UtenteService {
 
-    private UtenteDAOImpl repo;
+    private UtenteDAO repo;
 
     @Autowired
-    public  UtenteService(UtenteDAOImpl repo){
+    public  UtenteService(UtenteDAO repo){
         this.repo = repo;
     }
 

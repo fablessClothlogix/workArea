@@ -6,6 +6,7 @@ import lombok.Getter;
 import lombok.Setter;
 import lombok.ToString;
 
+import java.util.Set;
 
 
 @Getter
@@ -21,6 +22,9 @@ public class ColoreEntity {
 
     @Column(name =  "descrizione")
     private String descrizione;
+
+    @ManyToMany(mappedBy = "colori")
+    private Set<ProdottoEntity> prodotti ;
 
     public ColoreEntity() {}
 

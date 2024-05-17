@@ -1,4 +1,5 @@
 com\fabless\clothlogix\Service\Impl\MaterialeService.class
+com\fabless\clothlogix\mapper\SuperClassMapperImpl.class
 com\fabless\clothlogix\Service\AbstractProfiloService.class
 com\fabless\clothlogix\Service\AbstractTipoService.class
 com\fabless\clothlogix\Service\Impl\UtenteService.class
@@ -18,11 +19,13 @@ com\fabless\clothlogix\DAO\impl\UtenteDAOImpl.class
 com\fabless\clothlogix\Service\AbstractLoginService.class
 com\fabless\clothlogix\Service\Impl\ProfiloService.class
 com\fabless\clothlogix\DAO\impl\MaterialeDAOImpl.class
+com\fabless\clothlogix\DTO\ColoreDTO.class
 com\fabless\clothlogix\Service\AbstractUtenteService.class
 com\fabless\clothlogix\DAO\LoginDAO.class
 com\fabless\clothlogix\DAO\ProdottoDAO.class
 com\fabless\clothlogix\ServletInitializer.class
 com\fabless\clothlogix\DAO\impl\TipoDAOImpl.class
+com\fabless\clothlogix\mapper\SuperClassMapper.class
 com\fabless\clothlogix\DAO\impl\MagazzinoDAOImpl.class
 com\fabless\clothlogix\DAO\MaterialeDAO.class
 com\fabless\clothlogix\DAO\TagliaDAO.class
@@ -35,6 +38,7 @@ com\fabless\clothlogix\ClothlogixApplication.class
 com\fabless\clothlogix\model\entities\TagliaEntity.class
 com\fabless\clothlogix\DAO\impl\ProfiloDAOImpl.class
 com\fabless\clothlogix\DAO\ProfiloDAO.class
+com\fabless\clothlogix\controller\ColoreController.class
 com\fabless\clothlogix\DAO\ColoreDAO.class
 com\fabless\clothlogix\DAO\impl\ProdottoDAOImpl.class
 com\fabless\clothlogix\model\entities\LoginEntity.class

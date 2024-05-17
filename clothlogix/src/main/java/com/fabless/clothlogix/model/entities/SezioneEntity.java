@@ -5,7 +5,7 @@ import lombok.Getter;
 import lombok.Setter;
 import lombok.ToString;
 
-
+import java.util.Set;
 
 
 @Getter
@@ -25,9 +25,11 @@ public class SezioneEntity {
     @Column(name =  "fila")
     private String fila;
 
-    @ManyToOne
-    @JoinColumn(name = "magazzino_id")
-    private MagazzinoEntity magazzino;
+//    @ManyToOne(mappedBy = "sezioni")
+//    private MagazzinoEntity magazzino;
+
+    @OneToMany(mappedBy = "sezioni")
+    private Set<ProdottoEntity> prodotti ;
 
     public SezioneEntity(){}
 

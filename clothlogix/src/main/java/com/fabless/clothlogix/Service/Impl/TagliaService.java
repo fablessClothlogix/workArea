@@ -2,6 +2,7 @@ package com.fabless.clothlogix.Service.Impl;
 
 
 
+import com.fabless.clothlogix.DAO.TagliaDAO;
 import com.fabless.clothlogix.DAO.impl.TagliaDAOImpl;
 
 import com.fabless.clothlogix.model.entities.TagliaEntity;
@@ -17,10 +18,10 @@ import java.util.Optional;
 @Service
 public class TagliaService {
 
-    private TagliaDAOImpl repo;
+    private TagliaDAO repo;
 
     @Autowired
-    public  TagliaService(TagliaDAOImpl repo){
+    public  TagliaService(TagliaDAO repo){
         this.repo = repo;
     }
 

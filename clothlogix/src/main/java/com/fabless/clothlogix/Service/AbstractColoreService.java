@@ -12,7 +12,6 @@ public interface AbstractColoreService {
     Iterable<ColoreEntity> findAll(Map<String, Object> risposta) throws DataException;
 
     Optional<ColoreEntity> findById(Long id, Map<String, Object> risposta) throws DataException;
-
     void create(ColoreEntity coloreEntity, Map<String, Object> risposta) throws DataException;
 
     void upload(ColoreEntity coloreEntity, Map<String, Object> risposta) throws  DataException;

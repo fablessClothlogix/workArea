@@ -3,7 +3,7 @@ package com.fabless.clothlogix.Service.Impl;
 
 
 
-import com.fabless.clothlogix.DAO.impl.TipoDAOImpl;
+import com.fabless.clothlogix.DAO.TipoDAO;
 
 import com.fabless.clothlogix.model.entities.TipoEntity;
 
@@ -18,10 +18,10 @@ import java.util.Optional;
 @Service
 public class TipoService {
 
-    private TipoDAOImpl repo;
+    private TipoDAO repo;
 
     @Autowired
-    public  TipoService(TipoDAOImpl repo){
+    public  TipoService(TipoDAO repo){
         this.repo = repo;
     }
 

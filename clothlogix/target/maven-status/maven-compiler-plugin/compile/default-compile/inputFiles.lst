@@ -15,6 +15,7 @@ C:\Sviluppo\workArea\clothlogix\src\main\java\com\fabless\clothlogix\Service\Imp
 C:\Sviluppo\workArea\clothlogix\src\main\java\com\fabless\clothlogix\model\entities\UtenteEntity.java
 C:\Sviluppo\workArea\clothlogix\src\main\java\com\fabless\clothlogix\Service\AbstractUtenteService.java
 C:\Sviluppo\workArea\clothlogix\src\main\java\com\fabless\clothlogix\Service\AbstractTagliaService.java
+C:\Sviluppo\workArea\clothlogix\src\main\java\com\fabless\clothlogix\DTO\ColoreDTO.java
 C:\Sviluppo\workArea\clothlogix\src\main\java\com\fabless\clothlogix\Service\AbstractMagazzinoService.java
 C:\Sviluppo\workArea\clothlogix\src\main\java\com\fabless\clothlogix\ServletInitializer.java
 C:\Sviluppo\workArea\clothlogix\src\main\java\com\fabless\clothlogix\DAO\ColoreDAO.java
@@ -33,12 +34,14 @@ C:\Sviluppo\workArea\clothlogix\src\main\java\com\fabless\clothlogix\DAO\impl\Pr
 C:\Sviluppo\workArea\clothlogix\src\main\java\com\fabless\clothlogix\Service\Impl\TipoService.java
 C:\Sviluppo\workArea\clothlogix\src\main\java\com\fabless\clothlogix\model\entities\TipoEntity.java
 C:\Sviluppo\workArea\clothlogix\src\main\java\com\fabless\clothlogix\Service\AbstractProfiloService.java
+C:\Sviluppo\workArea\clothlogix\src\main\java\com\fabless\clothlogix\controller\ColoreController.java
 C:\Sviluppo\workArea\clothlogix\src\main\java\com\fabless\clothlogix\DAO\impl\MaterialeDAOImpl.java
 C:\Sviluppo\workArea\clothlogix\src\main\java\com\fabless\clothlogix\DAO\SezioneDAO.java
 C:\Sviluppo\workArea\clothlogix\src\main\java\com\fabless\clothlogix\model\entities\ProdottoEntity.java
 C:\Sviluppo\workArea\clothlogix\src\main\java\com\fabless\clothlogix\model\entities\SezioneEntity.java
 C:\Sviluppo\workArea\clothlogix\src\main\java\com\fabless\clothlogix\DAO\impl\TipoDAOImpl.java
 C:\Sviluppo\workArea\clothlogix\src\main\java\com\fabless\clothlogix\DAO\LoginDAO.java
+C:\Sviluppo\workArea\clothlogix\src\main\java\com\fabless\clothlogix\mapper\SuperClassMapper.java
 C:\Sviluppo\workArea\clothlogix\src\main\java\com\fabless\clothlogix\Service\AbstractProdottoService.java
 C:\Sviluppo\workArea\clothlogix\src\main\java\com\fabless\clothlogix\Service\Impl\LoginService.java
 C:\Sviluppo\workArea\clothlogix\src\main\java\com\fabless\clothlogix\Service\Impl\ProfiloService.java

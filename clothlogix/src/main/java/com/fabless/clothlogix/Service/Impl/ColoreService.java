@@ -1,7 +1,8 @@
 package com.fabless.clothlogix.Service.Impl;
 
 
-import com.fabless.clothlogix.DAO.impl.ColoreDAOImpl;
+import com.fabless.clothlogix.DAO.ColoreDAO;
+
 import com.fabless.clothlogix.Service.AbstractColoreService;
 import com.fabless.clothlogix.model.entities.ColoreEntity;
 
@@ -15,10 +16,10 @@ import java.util.Optional;
 @Service
 public class ColoreService implements AbstractColoreService {
 
-    private ColoreDAOImpl repo;
+    private ColoreDAO repo;
 
     @Autowired
-    public  ColoreService(ColoreDAOImpl repo){
+    public  ColoreService(ColoreDAO repo){
         this.repo = repo;
     }
 
